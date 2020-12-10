@@ -13,6 +13,9 @@
     <None Update="Problems\ProblemOne\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Problems\ProblemTwo\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
