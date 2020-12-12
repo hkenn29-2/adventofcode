@@ -5,8 +5,15 @@ using System;
 
 namespace AdventOfCode
 {
-    class Program
+    public class Settings
     {
+        public bool Debug { get; set; } = false;
+    }
+
+    public class Program
+    {
+        public static Settings GlobalSettings { get; set; } = new Settings();
+
         static void Main(string[] args)
         {
             Console.WriteLine("Problem One");

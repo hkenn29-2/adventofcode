@@ -31,7 +31,11 @@ namespace AdventOfCode.Problems.ProblemThree
                 int columnPosition = 0;
                 int treeCount = 0;
 
-                var debugMap = this.LoadDebugMap(map);
+                string[,] debugMap = null;
+                if (Program.GlobalSettings.Debug)
+                {
+                    debugMap = this.LoadDebugMap(map);
+                }
 
                 while (rowPosition < map.GetLength(0) - 1)
                 {
@@ -42,16 +46,19 @@ namespace AdventOfCode.Problems.ProblemThree
                     // Check if we have hit a tree
                     if (map[rowPosition, columnPosition])
                     {
-                        debugMap[rowPosition, columnPosition] = "X";
                         treeCount++;
                     }
-                    else
+                    
+                    if (Program.GlobalSettings.Debug)
                     {
-                        debugMap[rowPosition, columnPosition] = "O";
+                        debugMap[rowPosition, columnPosition] = map[rowPosition, columnPosition] ? "X" : "O";
                     }
                 }
 
-                this.PrintMap(debugMap);
+                if (Program.GlobalSettings.Debug)
+                {
+                    this.PrintMap(debugMap);
+                }
 
                 solutionString.Append($"We have hit {treeCount} trees when moving {slope.ColumnMovement} right and {slope.RowMovement} down! Map size was {map.GetLength(0)}x{map.GetLength(1)}");
                 solutionString.Append(Environment.NewLine);
