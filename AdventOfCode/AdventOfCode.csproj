@@ -13,6 +13,12 @@
     <None Update="Problems\ProblemOne\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Problems\ProblemThree\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Problems\ProblemThree\test_input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Problems\ProblemTwo\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
