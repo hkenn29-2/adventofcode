@@ -10,6 +10,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Problems\ProblemFive\input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Problems\ProblemFive\test_input">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Problems\ProblemFour\input">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

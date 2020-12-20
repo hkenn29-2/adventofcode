@@ -1,4 +1,5 @@
-﻿using AdventOfCode.Problems.ProblemFour;
+﻿using AdventOfCode.Problems.ProblemFive;
+using AdventOfCode.Problems.ProblemFour;
 using AdventOfCode.Problems.ProblemOne;
 using AdventOfCode.Problems.ProblemThree;
 using AdventOfCode.Problems.ProblemTwo;
@@ -31,6 +32,10 @@ namespace AdventOfCode
 
             Console.WriteLine("Problem Four");
             Console.WriteLine(new ProblemFour().Solve());
+            Console.WriteLine(Environment.NewLine);
+
+            Console.WriteLine("Problem Five");
+            Console.WriteLine(new ProblemFive().Solve());
             Console.WriteLine(Environment.NewLine);
         }
     }
