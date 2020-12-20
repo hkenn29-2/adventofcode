@@ -5,9 +5,9 @@ using System.Text;
 
 namespace AdventOfCode.Problems.ProblemThree
 {
-    public class ProblemThree : IProblem
+    public class ProblemThree : Problem
     {
-        public string Solve()
+        public override string Solve()
         {
             // Load the map into a mxn matrix
             var map = this.LoadMap();

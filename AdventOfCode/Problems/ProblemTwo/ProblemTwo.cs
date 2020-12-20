@@ -6,9 +6,9 @@ using System.Text;
 
 namespace AdventOfCode.Problems.ProblemTwo
 {
-    public class ProblemTwo : IProblem
+    public class ProblemTwo : Problem
     {
-        public string Solve()
+        public override string Solve()
         {
             var inputStrings = File.ReadAllText("Problems\\ProblemTwo\\input").Split('\n');
 

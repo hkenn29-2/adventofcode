@@ -7,9 +7,9 @@ using System.Text;
 
 namespace AdventOfCode.Problems.ProblemOne
 {
-    public class ProblemOne : IProblem
+    public class ProblemOne : Problem
     {
-        public string Solve()
+        public override string Solve()
         {
             // Read the input
             var inputNumbers = File.ReadAllText("Problems\\ProblemOne\\input").Split('\n').TrySelect(x => int.Parse(x)).ToArray();
